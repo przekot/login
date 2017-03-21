@@ -1,0 +1,160 @@
+body,html {
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    position:relative;
+    width:100%;
+    height:100%;
+    background: rgba(169,52,247,1);
+    background: -moz-linear-gradient(top, rgba(169,52,247,1) 0%, rgba(16,176,201,1) 74%, rgba(16,176,201,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(169,52,247,1)), color-stop(74%, rgba(16,176,201,1)), color-stop(100%, rgba(16,176,201,1)));
+    background: -webkit-linear-gradient(top, rgba(169,52,247,1) 0%, rgba(16,176,201,1) 74%, rgba(16,176,201,1) 100%);
+    background: -o-linear-gradient(top, rgba(169,52,247,1) 0%, rgba(16,176,201,1) 74%, rgba(16,176,201,1) 100%);
+    background: -ms-linear-gradient(top, rgba(169,52,247,1) 0%, rgba(16,176,201,1) 74%, rgba(16,176,201,1) 100%);
+    background: linear-gradient(to bottom, rgba(169,52,247,1) 0%, rgba(16,176,201,1) 74%, rgba(16,176,201,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a934f7', endColorstr='#10b0c9', GradientType=0 );
+}
+
+.form-container {
+    position:absolute;
+    width:400px;
+    height:360px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius:10px;
+    background:rgba(255,255,255,0.9);
+    box-shadow: 10px 10px 55px -21px rgba(112,112,112,1);
+    text-align:center;
+    transition: all 0.5s ease;
+}
+
+.signup {
+    position:absolute;
+    margin-top:250px;
+    width:400px;
+    height:70px;
+    padding-top:20px;
+    padding-bottom:20px;
+    text-align:center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background:rgba(255,255,255,0.9);
+    border-radius:10px;
+    border:0;
+    font-size:18px;
+    color:#333;
+    transition: all 0.5s ease;
+}
+
+.signup:hover {
+    background: rgba(169,52,247,.6);
+    transition: all 0.5s ease;
+    color:#fff;
+}
+
+
+@media screen and (max-width:500px) {
+    .form-container {
+        width:100%;
+        border-radius:0;
+        transition: all 0.5s ease;
+    }
+    .signup {
+        width:100%;
+        border-radius:0;
+    }
+
+    header nav {
+        display:none;
+    }
+
+}
+
+.form-container form input {
+    text-align:center;
+    font-size:14px;
+}
+
+form {
+    position:relative;
+}
+
+form h1 {
+    text-align:center;
+    color: #a1a1a1;
+    top:20px;
+}
+
+form input {
+    box-sizing: border-box;
+    height:50px;
+    width:70%;
+    margin-top:20px;
+}
+
+.form-container p {
+    width:120px;
+    margin:0 auto;
+    margin-top:15px;
+    font-size:12px;
+    border-bottom:1px dotted #a1a1a1;
+}
+
+#submit {
+    background: rgba(169,52,247,.7);
+    width:70%;
+    margin-top:30px;
+    border:0;
+    border-radius:10px;
+    padding-bottom:20px;
+    padding-top:20px;
+    font-size:14px;
+    color:#fff;
+}
+
+header {
+    position:fixed;
+    top:0;
+    width:100%;
+    height:60px;
+    background:#333;
+    color:#fff;
+    text-align: center;
+    z-index:999;
+}
+
+
+header nav ul {
+    list-style-type: none;
+    float:right;
+    margin-right:30px;
+    transition: all 0.5s ease;
+}
+
+header nav ul li {
+    display:inline-block;
+    padding-left:30px;
+    font-weight: 300;
+    font-size:12px;
+}
+
+.error {
+    background:url('../img/error.png');
+    background-size:cover;
+    width:24px;
+    height:24px;
+}
+
+#login-error {
+    position:absolute;
+    top:100px;
+    right:20px;
+    visibility: hidden;
+}
